@@ -5,8 +5,8 @@ Gris Oscuro (Correas de reloj y tijeras): #3E3E3E
 Piel (Manos): #C0A896 */
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0.1;
+    padding: 0.1;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
@@ -34,7 +34,7 @@ header .logo {
 }
 
 header .logo img {
-    width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+    width: 50px; 
     height: auto;
     margin-right: 10px;
 }
@@ -120,7 +120,7 @@ h1 {
     margin: 20px;
     text-align: center;
     padding: 20px;
-    width: 300px; /* Aumenta el ancho del producto */
+    width: 300px; 
 }
 
 .product img {
@@ -213,7 +213,7 @@ h1 {
     height: 100vh;
     padding: 50px;
     border-radius: 8px;
-    gap: 50px; /* Añade espacio entre la imagen y el texto */
+    gap: 50px; 
 }
 
 .locations_img {
@@ -286,11 +286,11 @@ h1 {
 }
 
 .contact_img img {
-    width: 150px; /* Ajusta el tamaño según sea necesario */
-    height: 150px; /* Asegura que la imagen sea cuadrada */
-    border-radius: 20%; /* Borde redondeado */
+    width: 150px; 
+    height: 150px; 
+    border-radius: 20%; 
     margin-bottom: 20px;
-    object-fit: cover; /* Asegura que la imagen cubra el área y mantenga la proporción */
+    object-fit: cover; 
 }
 
 .contact_info {
@@ -310,7 +310,7 @@ h1 {
 }
 
 .boton2 {
-    background-color: #A47550; /* Marrón Claro */
+    background-color: #A47550; 
     color: #fff;
     padding: 10px 15px;
     text-decoration: none;
@@ -320,7 +320,7 @@ h1 {
 }
 
 .boton2:hover {
-    background-color: #C0A896; /* Color Piel */
+    background-color: #C0A896; 
 }
 
 
