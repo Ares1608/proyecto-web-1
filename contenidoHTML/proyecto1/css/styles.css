@@ -1,3 +1,9 @@
+/* Verde Oscuro (Fondo de trabajo): #2E3A34
+Marrón Claro (Correas de reloj): #A47550
+Marrón Oscuro (Hilo enrollado): #4E4031
+Gris Oscuro (Correas de reloj y tijeras): #3E3E3E
+Piel (Manos): #C0A896 */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +13,7 @@
 
 body {
     color: #fff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background: rgba(0, 0, 0, 0.5);
-  
 }
 
 header {
@@ -26,9 +28,26 @@ header {
     z-index: 1000;
 }
 
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    margin-right: 10px;
+}
+
+header .logo h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
 nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
 }
 
 nav ul li {
@@ -41,38 +60,35 @@ nav ul li a {
     font-size: 16px;
 }
 
+
 h1 {
     font-size: 24px;
 }
 
-.hero, .products, .aboutus {
-    background: url(/contenidoHTML/proyecto1/img/background.jpg)no-repeat center center/cover;
+.hero {
+    background: url(/contenidoHTML/proyecto1/img/background.jpg) no-repeat center center/cover;
     position: relative;
     height: 100vh;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.overlay h2 {
+.overlay {
     background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
 .boton1 {
-    background-color: #fff;
-    color: #000;
+    background-color: #A47550;
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 18px;
@@ -80,54 +96,58 @@ h1 {
 }
 
 .boton1:hover {
-    background-color: #ddd;
+    background-color: #8b5e3c;
 }
 
 .products {
-    background: rgba(0, 0, 0, 0.5);
-    background: url(/contenidoHTML/proyecto1/img/background.jpg)no-repeat center center/cover;
+    background-color: #4E4031;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 50px 0;
     border-radius: 8px;
-    height: 100vh;
-    
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
 .product {
-    
-    margin: 50px;
+    margin: 20px;
     text-align: center;
-    padding: 50px;
-    width: 200px;
-    height: 200px;
+    padding: 20px;
+    width: 300px; /* Aumenta el ancho del producto */
 }
 
 .product img {
-    
-    width: 300%;
-    height: 300%;
-    
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .product h2 {
     background-color: #fff;
-    margin: 30px 0 25px;
     color: #000;
-    justify-content: center;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .product p {
     background-color: #fff;
     color: #000;
-    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
     font-size: 16px;
 }
 
 .boton2 {
-    background-color: #fff;
-    color: #000;
+    background-color: #A47550;
+    color: #fff;
     padding: 10px 15px;
     text-decoration: none;
     font-size: 18px;
@@ -136,137 +156,174 @@ h1 {
 }
 
 .boton2:hover {
-    background-color: #ddd;
+    background-color: #8b5e3c;
 }
 
+.overlay2 {
+    text-align: center;
+    margin-top: 20px;
+}
 
-.overlay2 h2, a {
-    margin: 20px;
-    padding: 10px 15px;
-    
+.overlay2 h2 {
+    margin-bottom: 20px;
+}
+
+.overlay2 .boton2 {
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .aboutus {
-    background: url(/contenidoHTML/proyecto1/img/background.jpg)no-repeat center center/cover;
-    
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
     padding: 50px;
-    color: #fff; 
+    background-color: #2E3A34;
 }
 
 .aboutus .mision,
 .aboutus .vision {
-    display: flex;
-    align-items: flex-start;
-    
+    width: 48%;
 }
 
-.mision {
-    align-self: flex-start;
-    margin-bottom: auto; 
-    width: 60%;
+.aboutus .text {
+    text-align: center;
 }
 
-.vision {
-    align-self: flex-end;
-    margin-top: auto; 
-    width: 60%;
+.aboutus .text h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
 }
 
-.mision img,
-.vision img {
-    display: flex;
-    align-self:  end;
-    width: 500px; 
-    height: auto;
-    margin-right: 70px; 
+.aboutus .text p {
+    margin-bottom: 30px;
+    line-height: 1.6;
 }
 
-.mision h1,
-.vision h1 {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    font-size: 46px; 
-    margin-bottom: 50px; 
-    
-}
-
-.mision p,
-.vision p {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    font-size: 16px;
-    line-height: 1.5;
+.aboutus img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 .locations {
-    background: rgba(0, 0, 0, 0.5);
-    background: url(/contenidoHTML/proyecto1/img/background.jpg)no-repeat center center/cover;
+    background-color: #3E3E3E;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 50px;
-    border-radius: 8px;
     height: 100vh;
+    padding: 50px;
+    border-radius: 8px;
+    gap: 50px; /* Añade espacio entre la imagen y el texto */
 }
 
-.locations_img img{
-    width: 50%;
-    height: 50%;
+.locations_img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations_img img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     border-radius: 10px;
 }
 
 .info {
+    flex: 1;
     font-size: 16px;
-    padding: 50px;
-    border-radius: 25px;
-    text-align: left;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .info h1 {
-    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .info p {
-    margin: 5px 0;
-    font-weight: bold;
+    margin-bottom: 20px;
 }
 
+.boton2 {
+    background-color: #A47550;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.boton2:hover {
+    background-color: #C0A896;
+}
+
+
 .contact {
-    background: rgba(0, 0, 0, 0.5);
-    background: url(/contenidoHTML/proyecto1/img/background.jpg)no-repeat center center/cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 50px;
-    border-radius: 8px;
     height: 100vh;
 }
 
-.contact_img {
-    width: 50%;
-    height: 50%;
-    border-radius: 10px;
+.contact_left {
+    flex: 1;
+    background: url(/contenidoHTML/proyecto1/img/background.jpg) no-repeat center center/cover;
+}
+
+.contact_right {
+    flex: 1;
+    background: linear-gradient(to bottom right, #4E4031, #2E3A34);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: #fff;
+}
+
+.contact_img img {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: 150px; /* Asegura que la imagen sea cuadrada */
+    border-radius: 20%; /* Borde redondeado */
+    margin-bottom: 20px;
+    object-fit: cover; /* Asegura que la imagen cubra el área y mantenga la proporción */
 }
 
 .contact_info {
     font-size: 16px;
-    padding: 50px;
-    border-radius: 25px;
-    text-align: left;
+    text-align: center;
+    border-radius: 10px;
 }
-    
+
 .contact_info h1 {
-    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .contact_info p {
-    margin: 5px 0;
+    margin: 10px 0;
     font-weight: bold;
-}    
+}
+
+.boton2 {
+    background-color: #A47550; /* Marrón Claro */
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.boton2:hover {
+    background-color: #C0A896; /* Color Piel */
+}
+
+
 
 footer {
     background: #000;
@@ -307,7 +364,7 @@ footer {
 }
 
 .footer-section ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -319,6 +376,6 @@ footer {
     text-align: center;
     margin-top: 30px;
     font-size: 14px;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #ffffff;
     padding-top: 10px;
 }
